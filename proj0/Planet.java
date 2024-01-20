@@ -27,16 +27,25 @@ public class Planet {
     }
 
     public double calcDistance(Planet t){
-        return Math.sqrt((t.xxPos - xxPos) * (t.xxPos - xxPos) + (t.yyPos - yyPos) * (t.yyPos - yyPos));
+        double ans = Math.sqrt((t.xxPos - xxPos) * (t.xxPos - xxPos) + (t.yyPos - yyPos) * (t.yyPos - yyPos));
+        return ans;
     }
     public double calcForceExertedBy(Planet t){
-        return g * t.mass * mass / calcDistance(t) / calcDistance(t);
+        double r = this.calcDistance(t);
+        double ans = g * t.mass * mass / r / r;
+        return ans;
     }
     public double calcForceExertedByX(Planet t){
-        return calcForceExertedBy(t) * (t.xxPos - xxPos) / calcDistance(t);
+        double f = this.calcForceExertedBy(t);
+        double r = this.calcDistance(t);
+        double ans = f * (t.xxPos - xxPos) / r;
+        return ans;
     }
     public double calcForceExertedByY(Planet t){
-        return calcForceExertedBy(t) * (t.yyPos - yyPos) / calcDistance(t);
+        double f = this.calcForceExertedBy(t);
+        double r = this.calcDistance(t);
+        double ans = f * (t.yyPos - yyPos) / r;
+        return ans;
     }
     public double calcNetForceExertedByX(Planet[] s){
         double ans = 0.0;

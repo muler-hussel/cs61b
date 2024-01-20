@@ -43,7 +43,7 @@ public class NBody {
                 yForces[i] = ap[i].calcNetForceExertedByY(ap);
             }
             for (int i = 0; i < ap.length; i ++){
-                ap[i].update(t,xForces[i], yForces[i]);
+                ap[i].update(t, xForces[i], yForces[i]);
             }
             StdDraw.picture(0, 0, "images/starfield.jpg");
             for (Planet s : ap){
