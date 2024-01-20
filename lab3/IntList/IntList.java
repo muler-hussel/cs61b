@@ -112,7 +112,7 @@ public class IntList {
         if(L == null || L.rest == null){
             return L;
         }
-        IntList reversed = reverse(L);
+        IntList reversed = reverse(L.rest);
         L.rest.rest = L;
         L.rest = null;
         return reversed;
