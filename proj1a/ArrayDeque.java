@@ -57,7 +57,8 @@ public class ArrayDeque<T> {
         if (size == length - 1) {
             expand();
         }
-        array[minusOne(nextFirst)] = item;
+        nextFirst = minusOne((nextFirst));
+        array[nextFirst] = item;
         size++;
     }
     public void addLast(T item) {
@@ -82,7 +83,7 @@ public class ArrayDeque<T> {
         }
     }
     public T removeFirst() {
-        if (size <= length / 4 && length >= 16) {
+        if (length / size >= 4 && length >= 16) {
             shrink();
         }
         if (size == 0) {
@@ -94,7 +95,7 @@ public class ArrayDeque<T> {
         return ans;
     }
     public T removeLast() {
-        if (size <= length / 4 && length >= 16) {
+        if (length / size >= 4 && length >= 16) {
             shrink();
         }
         if (size == 0) {
