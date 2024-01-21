@@ -11,8 +11,8 @@ public class Palindrome {
         if (dq.size() <= 1 || dq.isEmpty()) {
             return true;
         }
-        while (dq.size() > 1){
-            if (dq.removeFirst() != dq.removeLast()){
+        while (dq.size() > 1) {
+            if (dq.removeFirst() != dq.removeLast()) {
                 return false;
             }
         }
