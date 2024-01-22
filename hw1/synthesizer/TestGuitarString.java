@@ -36,9 +36,9 @@ public class TestGuitarString {
         s.tic();
         double s2 = s.sample();
         s.tic(); 
-        double s3 = s.sample();
-        s.tic();
-        double s4 = s.sample();
+                double s3 = s.sample();
+                s.tic();
+                double s4 = s.sample();
 
         // If we tic once more, it should be equal to 0.996*0.5*(s1 + s2)
         s.tic();
