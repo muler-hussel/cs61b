@@ -7,19 +7,19 @@ public class Percolation {
     private int N;
     private WeightedQuickUnionUF WQU;
     private WeightedQuickUnionUF BW;
-    private int OpenNum;
+    private int openNum;
     public Percolation(int N) {
         if (N <= 0) {
             throw new IllegalArgumentException();
         }
         this.N = N;
-        this.OpenNum = 0;
+        this.openNum = 0;
         WQU = new WeightedQuickUnionUF(N * N + 2);
         BW = new WeightedQuickUnionUF(N * N + 2);
         grid = new boolean[N][N];
     }               // create N-by-N grid, with all sites initially blocked
     public void open(int row, int col) {
-        int next[][] = new int[][]{
+        int next[][] = new int[][] {
                 {0, 1},
                 {0, -1},
                 {1, 0},
@@ -32,8 +32,8 @@ public class Percolation {
             return;
         }
         grid[row][col] = true;
-        OpenNum++;
-        for (int i= 0; i < 3; i++) {
+        openNum++;
+        for (int i = 0; i < 3; i++) {
             int mx = next[i][0];
             int my = next[i][1];
             if (mx < 0 || my >= N) {
@@ -67,10 +67,9 @@ public class Percolation {
         return BW.connected(xyTo1D(row, col), N * N);
     } // is the site (row, col) full?
     public int numberOfOpenSites() {
-        return OpenNum;
+        return openNum;
     }          // number of open sites
     public boolean percolates() {
         return WQU.connected(N * N, N * N + 1);
     }             // does the system percolate?
-    // use for unit testing (not required)
 }
