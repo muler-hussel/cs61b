@@ -10,7 +10,6 @@ public class PercolationStats {
             throw new IllegalArgumentException();
         }
         this.T = T;
-        this.N = N;
         x = new double[T];
         for (int i = 0; i < T; i++) {
             Percolation per = pf.make(N);
@@ -19,7 +18,7 @@ public class PercolationStats {
                 int col = StdRandom.uniform(N);
                 per.open(row, col);
             }
-            x[i] = (double) per.numberOfOpenSites();
+            x[i] = (double) per.numberOfOpenSites() / (N * N);
         }
 
     }  // perform T independent experiments on an N-by-N grid
@@ -35,6 +34,4 @@ public class PercolationStats {
     public double confidenceHigh() {
         return mean() + 1.96 * stddev() / Math.sqrt(T);
     }                                // high endpoint of 95% confidence interval
-    public static void main(String[] args) {
-    }
 }

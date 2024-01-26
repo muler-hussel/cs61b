@@ -36,7 +36,7 @@ public class Percolation {
         for (int i = 0; i <= 3; i++) {
             int mx = next[i][0];
             int my = next[i][1];
-            if (mx < 0 || my >= N) {
+            if (my < 0 || my >= N) {
                 continue;
             }
             if (mx == -1) {
@@ -73,6 +73,4 @@ public class Percolation {
     public boolean percolates() {
         return WQU.connected(N * N, N * N + 1);
     }             // does the system percolate?
-    public static void main(String[] args) {
-    }  // use for unit testing (not required)
 }
