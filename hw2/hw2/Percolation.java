@@ -33,7 +33,7 @@ public class Percolation {
         }
         grid[row][col] = true;
         openNum++;
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i <= 3; i++) {
             int mx = next[i][0];
             int my = next[i][1];
             if (mx < 0 || my >= N) {
@@ -41,6 +41,7 @@ public class Percolation {
             }
             if (mx == -1) {
                 BW.union(xyTo1D(row, col), N * N);
+                continue;
             } else if (mx == N) {
                 WQU.union(xyTo1D(row, col), N * N + 1);
                 continue;
@@ -72,4 +73,6 @@ public class Percolation {
     public boolean percolates() {
         return WQU.connected(N * N, N * N + 1);
     }             // does the system percolate?
+    public static void main(String[] args) {
+    }  // use for unit testing (not required)
 }
