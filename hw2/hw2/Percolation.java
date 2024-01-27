@@ -17,6 +17,11 @@ public class Percolation {
         WQU = new WeightedQuickUnionUF(N * N + 2);
         BW = new WeightedQuickUnionUF(N * N + 2);
         grid = new boolean[N][N];
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                grid[i][j] = false;
+            }
+        }
     }               // create N-by-N grid, with all sites initially blocked
     public void open(int row, int col) {
         int next[][] = new int[][] {
@@ -65,12 +70,21 @@ public class Percolation {
         if (row < 0 || row >= N || col < 0 || col >= N) {
             throw new IndexOutOfBoundsException();
         }
+        if (!isOpen(row,col)) {
+            return false;
+        }
         return BW.connected(xyTo1D(row, col), N * N);
     } // is the site (row, col) full?
     public int numberOfOpenSites() {
         return openNum;
     }          // number of open sites
     public boolean percolates() {
+        if (openNum == 0) {
+            return false;
+        }
         return WQU.connected(N * N, N * N + 1);
     }             // does the system percolate?
+    // use for unit testing (not required)
+    public static void main(String[] args) {
+    }
 }
