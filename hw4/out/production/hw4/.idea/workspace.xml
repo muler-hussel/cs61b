@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a6bc30fe-34c6-41e8-8ce1-b78bceddb598" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/hw4/puzzle/Solver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw1/synthesizer/TestGuitarString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw1/synthesizer/TestGuitarString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw4/puzzle/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/hw4/puzzle/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw4/puzzle/WordPuzzleSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/hw4/puzzle/WordPuzzleSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1a/proj1a.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1a/proj1a.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/PalindromeFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/PalindromeFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/out/production/proj1b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/out/production/proj1b/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/out/production/proj1b/PalindromeFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/out/production/proj1b/PalindromeFinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/out/production/proj1b/TestOffByOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/out/production/proj1b/TestOffByOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj2/.idea/.gitignore" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2bacVcctlWZTm7mTta5Th2HaWJl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/cs61b/cs61b/library-sp18/javalib",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.TestBoard">
+    <configuration name="CommonBugDetector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hw4.puzzle.CommonBugDetector" />
+      <module name="hw4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hw4.puzzle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordPuzzleSolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hw4.puzzle.WordPuzzleSolver" />
+      <module name="hw4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hw4.puzzle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hw4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hw4.puzzle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hw4.puzzle" />
+      <option name="MAIN_CLASS_NAME" value="hw4.puzzle.TestBoard" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestBoard" />
+        <item itemvalue="Application.WordPuzzleSolver" />
+        <item itemvalue="Application.CommonBugDetector" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a6bc30fe-34c6-41e8-8ce1-b78bceddb598" name="Changes" comment="" />
+      <created>1706456657026</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706456657026</updated>
+      <workItem from="1706456658002" duration="5325000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
