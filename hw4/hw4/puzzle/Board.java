@@ -56,7 +56,7 @@ public class Board implements WorldState {
                 } else {
                     int goali = (tiles[i][j] - 1) / N;
                     int goalj = (tiles[i][j] - 1) % N;
-                    ret = Math.abs(i - goali) + Math.abs(j - goalj);
+                    ret = ret + Math.abs(i - goali) + Math.abs(j - goalj);
                 }
             }
         }
@@ -144,4 +144,8 @@ public class Board implements WorldState {
         }
         return neighbors;
     }
+    public int hashCode() {
+        return super.hashCode();
+    }
 }
+
