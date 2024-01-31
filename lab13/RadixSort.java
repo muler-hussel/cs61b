@@ -92,19 +92,4 @@ public class RadixSort {
         // Optional MSD helper method for optional MSD radix sort
         return;
     }
-    public static void main(String[] args) {
-        String[] asciis = new String[] { "56", "112", "94", "4", "9", "82", "394", "80" };
-        String[] res = RadixSort.sort(asciis);
-        for (String s : res) {
-            System.out.println(s + " ");
-        }
-
-        System.out.println();
-
-        /*String[] asciis2 = new String[] {"  ", "      ", "    ", " "};
-        String[] res2 = RadixSort.sort(asciis2);
-        for (String s : res2) {
-            System.out.print(s + ",");
-        }*/
-    }
 }
