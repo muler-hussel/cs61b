@@ -16,6 +16,6 @@ public class StrangeBitwiseGenerator implements Generator {
         return normalize(weirdState);
     }
     private double normalize(int x) {
-        return x * 2 / period - 1;
+        return (double) x * 2 / period - 1;
     }
 }

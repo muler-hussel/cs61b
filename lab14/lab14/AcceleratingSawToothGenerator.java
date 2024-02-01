@@ -22,6 +22,6 @@ public class AcceleratingSawToothGenerator implements Generator {
         return normalize(state % period);
     }
     private double normalize(int x) {
-        return x * 2 / period - 1;
+        return (double) x * 2 / period - 1;
     }
 }
