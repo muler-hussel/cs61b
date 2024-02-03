@@ -36,10 +36,14 @@ public class TestPlip {
 
     @Test
     public void testReplicate() {
-
+        Plip p = new Plip(2);
+        Plip q = p.replicate();
+        assertNotSame(p, q);
+        assertEquals(1, p.energy(), 0.01);
+        assertEquals(1, q.energy(), 0.01);
     }
 
-    //@Test
+    @Test
     public void testChoose() {
         Plip p = new Plip(1.2);
         HashMap<Direction, Occupant> surrounded = new HashMap<Direction, Occupant>();
@@ -56,6 +60,31 @@ public class TestPlip {
         Action expected = new Action(Action.ActionType.STAY);
 
         assertEquals(expected, actual);
+
+        p = new Plip(1.2);
+        surrounded = new HashMap<Direction, Occupant>();
+        surrounded.put(Direction.TOP, new Impassible());
+        surrounded.put(Direction.BOTTOM, new Impassible());
+        surrounded.put(Direction.LEFT, new Impassible());
+        surrounded.put(Direction.RIGHT, new Empty());
+
+        actual = p.chooseAction(surrounded);
+        expected = new Action(Action.ActionType.REPLICATE, Direction.RIGHT);
+
+        assertEquals(expected, actual);
+
+        p = new Plip(0.4);
+        surrounded = new HashMap<Direction, Occupant>();
+        surrounded.put(Direction.TOP, new Impassible());
+        surrounded.put(Direction.BOTTOM, new Clorus());
+        surrounded.put(Direction.LEFT, new Impassible());
+        surrounded.put(Direction.RIGHT, new Empty());
+
+        actual = p.chooseAction(surrounded);
+        Action expected1 = new Action(Action.ActionType.MOVE, Direction.RIGHT);
+        Action expected2 = new Action(Action.ActionType.STAY);
+        boolean ret = expected1.equals(actual) || expected2.equals(actual);
+        assertTrue(ret);
     }
 
     public static void main(String[] args) {
